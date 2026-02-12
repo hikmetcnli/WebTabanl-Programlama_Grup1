@@ -8,5 +8,12 @@ namespace WP_Hafta2.Controllers
         {
             return "Merhaba Dünya !";
         }
+        public int Topla()
+        {
+            int aa = 10;
+            int bb = 20;
+
+            return aa + bb; 
+        }
     }
 }
