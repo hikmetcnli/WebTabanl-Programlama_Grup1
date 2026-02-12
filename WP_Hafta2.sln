@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WP_Hafta2", "WP_Hafta2\WP_Hafta2.csproj", "{EDFC18C4-A8AF-48CF-A0A2-9E9E7F08350E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDFC18C4-A8AF-48CF-A0A2-9E9E7F08350E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDFC18C4-A8AF-48CF-A0A2-9E9E7F08350E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDFC18C4-A8AF-48CF-A0A2-9E9E7F08350E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDFC18C4-A8AF-48CF-A0A2-9E9E7F08350E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9661B5F8-6646-44BB-A1EA-948A1D97C2AA}
+	EndGlobalSection
+EndGlobal
