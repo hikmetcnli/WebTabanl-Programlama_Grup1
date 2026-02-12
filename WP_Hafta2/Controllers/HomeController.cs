@@ -4,16 +4,15 @@ namespace WP_Hafta2.Controllers
 {
     public class HomeController : Controller
     {
-        public string Index()
+        public IActionResult Index()
         {
-            return "Merhaba Dünya !";
+            return View();
         }
-        public int Topla()
+        public IActionResult KitapKayit()
         {
-            int aa = 10;
-            int bb = 20;
+            return View();
+        }
 
-            return aa + bb; 
-        }
+       
     }
 }

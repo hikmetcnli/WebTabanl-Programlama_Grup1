@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitap Kayıt Formu</title>
+	<link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Kitap Kayıt Formu</h2>
+
+        <form action="#" method="post">
+
+            <label for="kitapNo">Kitap No:</label>
+            <input type="number" id="kitapNo" name="kitapNo" required>
+
+            <label for="kitapAdi">Kitap Adı:</label>
+            <input type="text" id="kitapAdi" name="kitapAdi" required>
+
+            <!-- Çok Seçmeli Yazar -->
+            <label for="yazar">Yazar (Birden Fazla Seçilebilir):</label>
+            <select id="yazar" name="yazar" required>
+                <option value="Ahmet Hamdi Tanpınar">Ahmet Hamdi Tanpınar</option>
+                <option value="Orhan Pamuk">Orhan Pamuk</option>
+                <option value="Elif Şafak">Elif Şafak</option>
+                <option value="Sabahattin Ali">Sabahattin Ali</option>
+                <option value="Yaşar Kemal">Yaşar Kemal</option>
+            </select>
+
+            <label for="yayinEvi">Yayınevi:</label>
+            <input type="text" id="yayinEvi" name="yayinEvi" required>
+
+            <label for="yayinTarihi">Yayın Tarihi:</label>
+            <input type="date" id="yayinTarihi" name="yayinTarihi" required>
+
+            <!-- Radio Button Aktif / Pasif -->
+            <label>Durum:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="durum" value="Aktif" required> Aktif</label>
+                <label><input type="radio" name="durum" value="Pasif"> Pasif</label>
+            </div>
+
+            <!-- Checkbox Tür Seçimi -->
+            <label>Tür (Birden Fazla Seçilebilir):</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="tur[]" value="Roman"> Roman</label>
+                <label><input type="checkbox" name="tur[]" value="Hikaye"> Hikaye</label>
+                <label><input type="checkbox" name="tur[]" value="Şiir"> Şiir</label>
+                <label><input type="checkbox" name="tur[]" value="Bilim Kurgu"> Bilim Kurgu</label>
+                <label><input type="checkbox" name="tur[]" value="Tarih"> Tarih</label>
+            </div>
+
+            <button type="submit">Kaydet</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
