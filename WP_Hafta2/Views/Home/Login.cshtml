@@ -1,0 +1,37 @@
+﻿<html>
+	<head>
+		<title>Kullanıcı Girişi</title>
+	</head>
+	<body>
+		<form asp-controller="Home" asp-action="Index" method="get">
+		<table>
+			<tr>
+				<td colspan="2">
+					<h3>Kullanıcı Girişi</h3>
+				</td>
+			</tr>
+		<tr>
+			<td>
+				<label asp-for="Email">Email</label>
+			</td>
+			<td>
+				<input asp-for="Email" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label asp-for="Password">Password</label>
+			</td>
+			<td>
+				<input asp-for="Password" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<button type="submit">Giriş Yap</button>
+			</td>
+		</tr>
+		</table>
+	</form>
+	</body>
+</html>
