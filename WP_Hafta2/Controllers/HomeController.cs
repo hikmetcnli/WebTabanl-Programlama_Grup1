@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WP_Hafta2.Models;
 
 namespace WP_Hafta2.Controllers
 {
@@ -6,6 +7,11 @@ namespace WP_Hafta2.Controllers
     {
 
         public IActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult LoginControl(User user)
         {
             return View();
         }

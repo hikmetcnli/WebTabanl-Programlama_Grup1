@@ -1,37 +1,35 @@
-﻿<html>
-	<head>
-		<title>Kullanıcı Girişi</title>
-	</head>
-	<body>
-		<form asp-controller="Home" asp-action="Index" method="get">
-		<table>
-			<tr>
-				<td colspan="2">
-					<h3>Kullanıcı Girişi</h3>
-				</td>
-			</tr>
-		<tr>
-			<td>
-				<label asp-for="Email">Email</label>
-			</td>
-			<td>
-				<input asp-for="Email" />
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<label asp-for="Password">Password</label>
-			</td>
-			<td>
-				<input asp-for="Password" />
-			</td>
-		</tr>
-		<tr>
-			<td colspan="2">
-				<button type="submit">Giriş Yap</button>
-			</td>
-		</tr>
-		</table>
-	</form>
-	</body>
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@using WP_Hafta2.Models
+@model User
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Kullanıcı Girişi</title>
+	<link href="~/css/login.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="login-card">
+        <h3>Kullanıcı Girişi</h3>
+
+        <form asp-controller="Home" asp-action="LoginControl" method="post">
+
+            <div class="form-group">
+                <label asp-for="Email">Email</label>
+                <input asp-for="Email" type="email" placeholder="Email adresinizi girin" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password">Şifre</label>
+                <input asp-for="Password" type="password" placeholder="Şifrenizi girin" />
+            </div>
+
+            <button type="submit">Giriş Yap</button>
+             
+        </form>
+    </div>
+
+</body>
 </html>
