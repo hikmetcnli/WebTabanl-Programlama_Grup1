@@ -16,7 +16,7 @@ var app = builder.Build();
 
 app.MapControllerRoute(
     name:"default",
-    pattern: "{controller=Home}/{action=Login}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

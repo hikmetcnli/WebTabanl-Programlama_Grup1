@@ -6,23 +6,23 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Kullanıcı Girişi</title>
+    <title> @ViewData["Baslik_En"] </title>
 	<link href="~/css/login.css" rel="stylesheet" />
 </head>
 <body>
 
     <div class="login-card">
-        <h3>Kullanıcı Girişi</h3>
+        <h3>@ViewData["Baslik"]</h3>
 
         <form asp-controller="Home" asp-action="LoginControl" method="post">
 
             <div class="form-group">
-                <label asp-for="Email">Email</label>
+                <label asp-for="Email">@ViewBag.Input1 </label>
                 <input asp-for="Email" type="email" placeholder="Email adresinizi girin" />
             </div>
 
             <div class="form-group">
-                <label asp-for="Password">Şifre</label>
+                <label asp-for="Password">@ViewBag.Input2</label>
                 <input asp-for="Password" type="password" placeholder="Şifrenizi girin" />
             </div>
 

@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using WP_Hafta2.Models
+
+@model Kitap 
+
 <html>
 <head>
 	<title>
@@ -28,8 +31,12 @@
 			<td><img src="/images/logo.png" width="50" height="50" /></td>
 			<td><h2>Gedik Üniversitesi Kütüphane Otomasyon Projesi</h2></td>
 		</tr>
-	</table>
-
+	</table> 
+	 
+	<h3>ID: @Model.Id </h3>
+	<h3>Kitap Adı: @Model.KitapAdi </h3>
+	<h3>Yazar: @Model.Yazar </h3>
+	<h3>Fiyat: @Model.Fiyat </h3>
 
 
 
